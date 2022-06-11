@@ -37,7 +37,7 @@ if (isset($_POST['email']) &&
     $stmt->execute([$email]);
 
     # if the email is exist
-    if ($stmt->rowCount() === 1) {
+    if ($stmt->rowCount() >= 0) {
     	$user = $stmt->fetch();
 
     	$user_id = $user['id'];

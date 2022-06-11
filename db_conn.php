@@ -1,5 +1,6 @@
 <?php 
-
+include "aa/header.php";
+include "aa/footer.php";
 # server name
 $sName = "localhost";
 # user name
